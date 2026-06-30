@@ -83,7 +83,8 @@ model-viever {
     display: flex; 
     justify-content: space-between; 
     width: 100%;  
-    background-color: rgb(159, 174, 222); 
+    background: linear-gradient(to bottom, rgb(159, 174, 222) 20%, rgb(133, 156, 234) 60%,rgb(97, 119, 188)100%);
+
     color: #fff;
     font-weight: bold;
     font-size: large;
@@ -118,4 +119,16 @@ model-viever {
     border-bottom: 3px solid #ffda1a;
     display: inline-block;
     padding-bottom: 5px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: white;
+    word-wrap: break-word;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
