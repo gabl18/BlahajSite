@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLÅHAJ SITE</title>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
+<body>
+    <nav id="top-bar">
+        <a id="logo" href="index.html">BLÅHAJ SITE</a>
+            
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#history">History</a>
+            <a href="#meme">Meme</a>
+            <a href="#quiz">Quiz</a>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>Learn about Blahaj</h1>
+            <p>not affiliated with IKEA in any way</p>
+        </div>
+        <model-viewer id="shark-model" src="images/blahaj.glb" alt="3D Blahaj" auto-rotate disable-zoom camera-orbit="0deg 80deg 60%">
+        </model-viewer>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        
+    </section>
+
+
+    <footer>
+        <div>
+            <a id="logo" href="index.html">
+                BLÅHAJSITE
+            </a>
+            
+            <p id="time-element" style="margin-right: 20px;">
+                loading time
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
