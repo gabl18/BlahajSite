@@ -16,7 +16,7 @@
             
         <div class="nav-links">
             <a href="#about">About</a>
-            <a href="#history">History</a>
+            <a href="#introduction">Introduction</a>
             <a href="#meme">Meme</a>
             <a href="#quiz">Quiz</a>
         </div>
@@ -24,7 +24,7 @@
 
     <section class="hero-section">
         <div class="hero-text">
-            <h1>Learn about Blahaj</h1>
+            <h1>Learn about Blåhaj</h1>
             <p>not affiliated with IKEA in any way</p>
         </div>
         <model-viewer id="shark-model" src="images/blahaj.glb" alt="3D Blahaj" auto-rotate disable-zoom camera-orbit="0deg 80deg 60%">
@@ -34,21 +34,40 @@
     <section id="about" class="about-section">
         <div class="about-content">
         <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Blåhaj is a plush toy manufactured and sold by the Swedish company IKEA. Its name comes from the swedish blåhaj and meins 'blue shark'.</p>
+            <p>(Swedish pronunciation: [<a href="https://upload.wikimedia.org/wikipedia/commons/transcoded/7/76/Sv-Bl%C3%A5haj.ogg/Sv-Bl%C3%A5haj.ogg.mp3" target="_blank">ˈblôːhaj</a>]) </p>
+            <p>Being modelled after the blue shark and made of recycled polyester, the plush has become a global phenomenon and gained much popularity.</p>
         </div>
 
     </section>
 
+    <section id="introduction" class="introduction-section">
+        <div class="introduction-content">
+            <h2>Introduction</h2>
+            <p>Dating way back to 2006 or so a shark-like plush first appeared at IKEA with the name of Korall Haj.</p>
+    
+            <p>The plush toy got first sold from at least 2008 under names such as "Grössby" and "Klappar Haj". Surprisingly these first versions didn't have the signature blue color Blåhajs around the world are known for, but were grey. The price of it back then was $19.99 usd, wich would be worth about $30 usd today as of 2026.</p>
+            <a href="https://www.in2013dollars.com/us/inflation/2010?amount=19.99">Inflation Calculator</a> 
+            <a href="https://web.archive.org/web/20100917005534/http://www.ikea.com/us/en/catalog/products/10158995" target="_blank">See it on the WaybackMachine.</a>
+
+            <p>Around 2012 the Shark was started to be made out of blue fabric, but still was referred to as "Klappar Haj". The current and more know name Blåhaj got adopted in early 2014 at a price of $14.99 usd accounted to inflation being worth roughly $23 usd as of 2026.</p>
+            <a href="https://www.in2013dollars.com/us/inflation/2010?amount=14.99">Inflation Calculator</a> 
+            <a href="https://web.archive.org/web/20121031062220/http://www.ikea.com/us/en/catalog/products/00247841/">See it on the WaybackMachine</a>
+
+            <p>It is both made from the outside and the inside of recycled polyester and can be washed at 40° (104°F). The plush is available in two sizes - a larger 1-meter (39 1⁄4 in) version and a small 0.55-meter (21 3⁄4 in) version that is also referred to as smolhaj. Different to most commonly used plastic eyes, the IKEA plush toys have embroidered eyes, making the plushies more durable and ensuring safety.</p>
+        </div>
+
+        <div class="gallery-section">
+            <div class="gallery-grid">
+                <img src="images/Korall Fisk 1.webp" class="gallery-item" data-full="images/Korall Fisk 1.webp" data-title="Korall Fisk 1" data-source="https://www.reddit.com/r/BLAHAJ/comments/qpe05v/before_blahaj_before_their_grey_cousins_ikea/" alt="Korall Fisk 1"> 
+                <img src="images/Korall Fisk 2.png" class="gallery-item" data-full="images/Korall Fisk 2.png" data-title="Korall Fisk 2" data-source="https://anniarbour.substack.com/p/whats-the-deal-with-blahaj" alt="Korall Fisk 2"> 
+                <img src="images/Korall Fisk 3.png" class="gallery-item" data-full="images/Korall Fisk 3.png" data-title="Korall Fisk 3" data-source="https://anniarbour.substack.com/p/whats-the-deal-with-blahaj" alt="Korall Fisk 3">
+                <img src="images/Grössby.png" class="gallery-item" data-full="images/Grössby.png" data-title="Grössby" data-source="https://anniarbour.substack.com/p/whats-the-deal-with-blahaj" alt="Klappar Haj">
+                <img src="images/Klappar Haj.JPG" class="gallery-item" data-full="images/Klappar Haj.JPG" data-title="Klappar Haj" data-source="https://web.archive.org/web/20100917005534/http://www.ikea.com/us/en/catalog/products/10158995" alt="Klappar Haj">
+            </div>
+        </div>
+
+    </section>
 
     <footer>
         <div>
@@ -61,6 +80,23 @@
             </p>
         </div>
     </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <button class="nav-btn prev-btn">&#10094;</button>
+        <div class="lightbox-content">
+            <div class="lightbox-header">
+                <span id="lightbox-title">Name of Image</span>
+            </div>
+
+            <img id="lightbox-img" src="" alt="Big-View">
+
+            <div class="lightbox-footer">
+                <a id="lightbox-source" href="#" target="_blank">credit/source</a>
+            </div>
+        </div>
+        <button class="nav-btn next-btn">&#10095;</button>
+    </div>
 
     <script src="script.js"></script>
 </body>
