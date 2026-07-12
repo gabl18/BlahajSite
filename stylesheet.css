@@ -134,7 +134,7 @@ model-viever {
 }
 
 .introduction-section {
-    height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -161,15 +161,47 @@ model-viever {
 .introduction-content {
     max-width: 600px;
     flex: 1;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
+.popularity-section {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: right;
+    background: linear-gradient(to bottom, #ffffff 0%, #5a9ed9 10%, #2f5e8d 100%);
+    padding: 60px 40px;
+    gap: 40px;
+}
 
+.popularity-section h2 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid #ffda1a;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.popularity-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: white;
+    word-wrap: break-word;
+}
+
+.popularity-content {
+    max-width: 600px;
+    flex: 1;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
 
 
 /* LIGHTBOX */
 .gallery-section {
     flex: 1;
-    max-height: 80vh;
+    max-height: 110vh;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -231,7 +263,7 @@ model-viever {
 #lightbox-header {
     width: 100%;
     margin-bottom: 10px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     text-align: left;
 }
