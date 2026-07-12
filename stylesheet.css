@@ -168,12 +168,13 @@ model-viever {
 .popularity-section {
     height: fit-content;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: right;
-    background: linear-gradient(to bottom, #ffffff 0%, #5a9ed9 10%, #2f5e8d 100%);
-    padding: 60px 40px;
-    gap: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #adcfed 0%, #5a9ed9 10%, #2f5e8d 100%);
+    padding: 80px 0;
+    overflow: hidden;
+    width: 100%;
 }
 
 .popularity-section h2 {
@@ -183,25 +184,38 @@ model-viever {
     padding-bottom: 5px;
 }
 
+.popularity-section h3 {
+    font-size: 1.8rem;
+    border-bottom: 3px solid #5a9ed9;
+    margin-top: 30px
+}
+
 .popularity-section p {
     font-size: 1.2rem;
     line-height: 1.6;
     color: white;
     word-wrap: break-word;
+    margin-bottom: 20px;
 }
 
 .popularity-content {
-    max-width: 600px;
-    flex: 1;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+    padding-bottom: 40px;
+    color: white;
+}
+
+.video-center {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
-/* LIGHTBOX */
 .gallery-section {
     flex: 1;
-    max-height: 110vh;
+    max-height: 120vh;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -227,6 +241,59 @@ model-viever {
     transform: scale(1.05);
 }
 
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.slider-track-1, .slider-track-2 {
+    display: flex;
+    width: max-content;
+    gap: 20px;
+}
+
+.slider-track-1 {
+    animation: scrollMarquee 35s linear infinite;
+}
+
+.slider-track-2 {
+    animation: scrollMarquee 38s linear infinite reverse;
+}
+
+.slider-container:hover .slider-track-1, .slider-container:hover .slider-track-2 {
+    animation-play-state: paused;
+}
+
+.slider-track .gallery-item {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slider-track .gallery-item:hover {
+    transform: scale(1.04);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+}
+
+@keyframes scrollMarquee {
+    0% {
+        transform: translaeX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* LIGHTBOX */
 .lightbox {
     display: none;
     position: fixed;
@@ -242,8 +309,8 @@ model-viever {
 
 .lightbox-content {
     position: relative;
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 90%;
+    max-height: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -255,7 +322,7 @@ model-viever {
 
 #lightbox-img {
     max-width: 100%;
-    max-height: 65vh;
+    max-height: 85vh;
     object-fit: contain;
     border-radius: 5px;
 }
@@ -306,8 +373,8 @@ model-viever {
     background: rgba(255,255,255,0.3);
 }
 .prev-btn {
-    left: 5%
+    left: 8%
 }
 .next-btn {
-    right: 5%
+    right: 8%
 }
