@@ -186,7 +186,7 @@ model-viever {
 
 .popularity-section h3 {
     font-size: 1.8rem;
-    border-bottom: 3px solid #5a9ed9;
+    border-bottom: 3px solid #4a779e;
     margin-top: 30px
 }
 
@@ -373,8 +373,113 @@ model-viever {
     background: rgba(255,255,255,0.3);
 }
 .prev-btn {
-    left: 8%
+    z-index: 1001;
+    left: 5%;
 }
 .next-btn {
-    right: 8%
+    right: 5%;
+    z-index: 1001;
+}
+
+
+
+
+
+
+/* Credits */
+.credits-body {
+    background-color: #173452
+}
+
+.credits-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #ffffff 0%, #527ea5 20%, #173452 95%);
+    padding: 120px 20px 60px 20px;
+}
+
+.credits-container {
+    max-width: 1100px;
+    width: 100%;
+    text-align: center;
+}
+
+.credits-container h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.credits-subtitle {
+    font-size: 1.2rem;
+    color: #2c2b2f;
+    margin-bottom: 40px;
+}
+
+.credits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(300px, 1fr));
+    gap: 25px;
+    padding: 10px;
+}
+
+.credit-card {
+    background: rgba(255,255,255,0.95);
+    padding: 25px;
+    border-radius: 16px;
+    text-align: left;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.8s ease, box-shadow 0.3 ease;
+}
+
+.credit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.credit-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.4rem;
+    color: #173452
+}
+
+.credit-card p {
+    margin: 0 0 20px 0;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+.license-tag {
+    align-self: flex-start;
+    background: #e1ecf4;
+    color: #2f5e8d;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.credit-link, .multi-links a {
+    color: #2f5e8d;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.credit-link:hover, .multi-links:hover {
+    color: #ffda1a
+}
+
+.multi-links {
+    display: flex;
+    gap: 15px
 }
