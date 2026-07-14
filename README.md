@@ -1,6 +1,6 @@
 # BlahajSite
 
-I created a fairly simple website that explains about the history of blahaj and general stuff about IKEA's plush toy and also quizzes you about what you know. I spent a loooong time on this site - without researching about the topic it was about 12,5 hours. 
+I created a fairly simple website that explains about the history of blahaj and general stuff about IKEA's plush toy that also quizzes you about what you know. I spent a loooong time on this site - without researching about the topic it was about 12,5 hours. 
 The BlahajSite features:
 
 * a spinning Blahaj greeting
