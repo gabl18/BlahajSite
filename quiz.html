@@ -6,7 +6,7 @@
     <title>Quiz - BLÅHAJ SITE</title>
 
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="icon" type="image/x-icon" href=".images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 </head>
 
 <body class="quiz-body">
@@ -24,9 +24,10 @@
     <div id="quiz">
         <div id="quiz-card">
             <h1>Blåhaj Quiz</h1>
-            <div id="question">Loading Question...</div>
+            
+            <div id="question" style="margin: 0; line-height: 1.6;">Prove everything you know about Blåhaj! <br> I would really suggest reading through the rest of the website first before starting this quiz.</div>
             <div id="options"></div>
-            <button id="submit">Submit</button>
+            <button id="submit">Start Quiz</button>
         </div>
     </div>
 
@@ -38,7 +39,8 @@
             <a href="credits.html">Credits & Sources</a>
         </div>
     </footer>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
     <script src="quiz.js"></script>
 </body>
 </html>
